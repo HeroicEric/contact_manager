@@ -13,9 +13,11 @@
 
 ## User Stories
 
+```
 As a user
 I want to see all of my contacts
 So that I can contact them
+```
 
 Acceptance Criteria:
 
@@ -25,9 +27,11 @@ Acceptance Criteria:
 
 ---
 
+```
 As a user
 I want to see a contact's information
 So that I can contact them
+```
 
 Acceptance Criteria:
 
