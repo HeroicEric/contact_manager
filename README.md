@@ -22,3 +22,21 @@ Acceptance Criteria:
 - I should see each contact's name
 - Contact's name should be displayed "last, first"
 - Contacts should be ordered alphabetically by last name
+
+---
+
+As a user
+I want to see a contact's information
+So that I can contact them
+
+Acceptance Criteria:
+
+ - I should see each contact's:
+  - Age
+  - Blood type
+  - Email
+  - First name
+  - Height
+  - Home address
+  - Last name
+  - Phone number
