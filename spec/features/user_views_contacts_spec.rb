@@ -19,6 +19,7 @@ feature "user views their contacts" do
     user3 = FactoryGirl.create(:user)
 
     visit root_path
+
     expect(page).to have_content "#{user1.last_name}, #{user1.first_name}"
     expect(page).to have_content "#{user2.last_name}, #{user2.first_name}"
     expect(page).to have_content "#{user3.last_name}, #{user3.first_name}"
