@@ -3,6 +3,9 @@ ContactManager::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+
+  # Set the root of our application ('/') to use the `index`
+  # action in the `UsersController`
   root 'users#index'
 
   resources :users, only: [:show]

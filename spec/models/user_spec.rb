@@ -2,7 +2,7 @@ require 'spec_helper'
 
 #####################################################################
 #
-# Don't write your tests 3 different ways.
+# Don't write your validation tests 3 different ways.
 # Choose manually, with shoulda, or with valid_attribute.
 # Not all three.
 # Don't do it three different ways.
