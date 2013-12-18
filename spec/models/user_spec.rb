@@ -1,19 +1,29 @@
 require 'spec_helper'
 
+#####################################################################
+#
+# Don't write your tests 3 different ways.
+# Choose manually, with shoulda, or with valid_attribute.
+# Not all three.
+# Don't do it three different ways.
+#
+#####################################################################
+
 describe User do
   let(:user) { User.new }
 
-  # Shoulda matcher
+  # Shoulda matcher way
   it { should validate_presence_of :first_name }
   it { should validate_presence_of :last_name }
 
-  # valid_attribute
+  # valid_attribute way
   it { should have_valid(:first_name).when("Eric", "Steve", "John") }
   it { should_not have_valid(:first_name).when(nil, "") }
 
-  it { should have_valid(:last_name).when("Eric", "Steve", "John") }
+  it { should have_valid(:last_name).when("Kelly", "Danko", "Watson") }
   it { should_not have_valid(:last_name).when(nil, "") }
 
+  # The manual way
   describe "validations" do
     it "requires first_name" do
       user.first_name = nil
