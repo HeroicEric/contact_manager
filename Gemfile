@@ -33,6 +33,7 @@ group :doc do
 end
 
 group :test, :development do
+  gem 'pry-rails'
   gem 'capybara'
   gem 'launchy'
   gem 'rspec-rails'
