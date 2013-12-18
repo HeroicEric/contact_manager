@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature "user views a contact's information", %r{
+feature "user views a contact's information", %q{
   As a user
   I want to see a contact's information
   So that I can contact them
